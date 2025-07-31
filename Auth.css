@@ -1,0 +1,95 @@
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1554284126-3e0b9a7a7a3a?auto=format&fit=crop&w=1350&q=80");
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Card for the form */
+.auth-card {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+/* Tabs container */
+.auth-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #e1e8ed;
+}
+
+/* Individual tab */
+.auth-tab {
+  flex: 1;
+  text-align: center;
+  padding: 12px 0;
+  cursor: pointer;
+  font-weight: 600;
+  color: #617d98;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+/* Active tab */
+.auth-tab.active {
+  color: #117a65;
+  border-bottom-color: #117a65;
+}
+
+/* Form styles */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input fields */
+.auth-input {
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1.5px solid #cbd2d9;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.auth-input:focus {
+  outline: none;
+  border-color: #117a65;
+  box-shadow: 0 0 5px rgba(17, 122, 101, 0.5);
+}
+
+/* Submit button */
+.auth-submit {
+  background-color: #117a65;
+  color: white;
+  padding: 14px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-submit:hover {
+  background-color: #0e5a4a;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 30px 20px;
+  }
+}
